@@ -1,0 +1,22 @@
+Description: Clean up produced files
+ This patch modified Makefile. Because old version Makefile does not
+ clean up own produced files.
+.
+ It is seems to me that I may not have claimed originalty, But I
+ would like to clear this patch license for feature maintainer.
+ This patch license is 3 clauses BSD.
+
+Author: Yukiharu YABUKI <yyabuki@debian.org>
+Forwarded: no
+Last-Update: 2011-10-01
+
+--- canna-shion-0.0.20010204.orig/Makefile
++++ canna-shion-0.0.20010204/Makefile
+@@ -8,6 +8,7 @@ shion:
+ 
+ clean:
+ 	rm -f *~
++	rm -f *.cbd *.cld
+ 
+ install:
+ 	install -m 644 ${DICS} ${DESTDIR}/var/lib/canna/dic/canna

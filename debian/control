@@ -1,0 +1,17 @@
+Source: canna-shion
+Section: utils
+Priority: optional
+Maintainer: Yukiharu YABUKI <yyabuki@debian.org>
+Build-Depends: debhelper  (>= 5)
+Build-Depends-Indep: canna
+Standards-Version: 3.9.3
+
+Package: canna-shion
+Architecture: all
+Depends: canna (>= 3.5b2-40), canna-utils, ${misc:Depends}
+Conflicts: shion
+Replaces: shion
+Description: supporting dictionaries for Canna
+ Shion is a set of dictionaries supporting Canna.
+ It has much more words than original dictionaries of Canna
+ and it makes Canna more intelligent.

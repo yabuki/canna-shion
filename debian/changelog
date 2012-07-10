@@ -1,0 +1,90 @@
+canna-shion (0.0.20010204-12) unstable; urgency=low
+
+  * update standard version
+  * remove linitian warnings
+
+ -- Yukiharu YABUKI <yyabuki@debian.org>  Wed, 11 Jul 2012 05:51:22 +0900
+
+canna-shion (0.0.20010204-11) unstable; urgency=low
+  
+  * Fix FTBFS (close: #643071)
+  * Update Standards-Version to 3.9.1
+  * Made a DEP3 formatted patch.
+
+ -- Yukiharu YABUKI <yyabuki@debian.org>  Sat, 01 Oct 2011 22:18:22 +0900
+
+canna-shion (0.0.20010204-10) unstable; urgency=low
+
+  * Converting to source format '3.0 (quilt)'
+  * Update Standards-Version to 3.8.4
+  * add dependency : ${misc:Depends}
+
+ -- Yukiharu YABUKI <yyabuki@debian.org>  Wed, 07 Apr 2010 16:32:36 +0900
+
+canna-shion (0.0.20010204-9) unstable; urgency=low
+
+  * Update Standards-Version to 3.8.2
+  * Update compat version to 5
+
+ -- Yukiharu YABUKI <yabuki@netfort.gr.jp>  Mon, 21 Jun 2009 22:21:43 +0900
+  
+canna-shion (0.0.20010204-8) unstable; urgency=low
+
+  * I adopt the package from QA upload. (closes: #429931)
+  * Check 'Makefile is exist' in debian/rules
+  * Change method that canna daemon is running. Old method check that
+    /tmp/.iroha/IROHA is exist. New method check that cannastat return value.
+    see detail : postinst and prerm.
+  * Add dependency which check running cannaserver (cannastat).
+
+ -- Yukiharu YABUKI <yabuki@netfort.gr.jp>  Thu, 21 Jun 2007 20:47:58 +0900
+
+canna-shion (0.0.20010204-7) unstable; urgency=low
+
+  * Orphan this package
+  * Update Standards-Version to 3.7.2.2
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Mon, 29 Jan 2007 06:38:10 +0900
+
+canna-shion (0.0.20010204-6) unstable; urgency=low
+
+  * Move debhelper from Build-Depends-Indep to Build-Depends
+  * Update Standards-Version to 3.7.2.0
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Thu, 15 Jun 2006 08:21:01 +0900
+
+canna-shion (0.0.20010204-5) unstable; urgency=low
+
+  * Update Standards-Version to 3.6.2.0.
+  * Use invoke-rc.d, closes: #367736
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Wed, 17 May 2006 23:11:08 -0400
+
+canna-shion (0.0.20010204-4) unstable; urgency=low
+
+  * Update Standards-Version to 3.5.9.0.
+  * Update debhelper compatible version to 4.
+
+ -- Yoshito Komatsu <ykomatsu@akaumigame.org>  Thu, 17 Apr 2003 20:23:38 +0900
+
+canna-shion (0.0.20010204-3) unstable; urgency=low
+
+  * Modify Build-Depends, closes: #134467
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Mon, 18 Feb 2002 15:15:44 +0900
+
+canna-shion (0.0.20010204-2) unstable; urgency=low
+
+  * Modify postinst and prerm methods.
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Thu, 24 Jan 2002 16:23:06 +0900
+
+canna-shion (0.0.20010204-1) unstable; urgency=low
+
+  * Initial Release for debian.org. closes: #113681
+
+ -- Yoshito Komatsu <ykomatsu@debian.org>  Thu, 27 Sep 2001 18:36:36 +0900
+
+Local variables:
+mode: debian-changelog
+End:
